@@ -14,4 +14,8 @@
 
 ## php-v 
 - the output of `php -v` 
-- !(php -v)[]
+- ![php -v](https://github.com/Venustrapflyyy/altschool-cloud-exercises/blob/main/exercise%20four/php-v.png)
+
+## /etc/apt/sources.list
+- the output of /etc/apt/sources.list 
+- 
