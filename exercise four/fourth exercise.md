@@ -18,4 +18,4 @@
 
 ## /etc/apt/sources.list
 - the output of /etc/apt/sources.list 
-- 
+![the output of /etc/apt/sources.list](https://github.com/Venustrapflyyy/altschool-cloud-exercises/blob/main/exercise%20four/etc_apt_sources.list%20output.png)
