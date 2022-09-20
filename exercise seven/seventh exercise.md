@@ -12,6 +12,6 @@
 - I then ran the command `echo $(sudo cat /proc/meminfo)` in my bash script, to first visualise my memory usage information 
 - Afterwards, I ran `echo $(sudo cat /proc/meminfo > /vagrant/ramusage)` in my bash script
 - This is to save the RAM usage information to the vagrant folder in my host machine, in a file called  "ramusage"
-- I also included `cd /home/vagrant` as a line in my bash script to show the pathway and location for my cron job 
+- I also included `cd /home/vagrant` as a line in my bash script to show the pathway and location for my cron job (as per the AltschoolLMS Tutor's lessons) 
 - I then created a cron job by running `* * * * * bash /home/vagrant/ramsavebashassignment.sh`
 - This automates saving the output of my `sudo cat /proc/meminfo` to my host machine and makes it a minutely activity 
