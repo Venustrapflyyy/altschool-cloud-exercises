@@ -8,10 +8,10 @@
 
 ## Steps 
 - I powered on my virtual machine and SSHed into it 
-- I then created my bash script titled `ramsavebashassignment.sh` by running `nano ramsavebashassignment.sh` and saving the script 
-- I then ran the command `echo $(sudo cat /proc/meminfo)` in my bash script, to first visualise my memory usage information 
-- Afterwards, I ran `echo $(sudo cat /proc/meminfo > /vagrant/ramusage)` in my bash script
-- This is to save the RAM usage information to the vagrant folder in my host machine, in a file called  "ramusage"
-- I also included `cd /home/vagrant` as a line in my bash script to show the pathway and location for my cron job (as per the AltschoolLMS Tutor's lessons) 
-- I then created a cron job by running `* * * * * bash /home/vagrant/ramsavebashassignment.sh`
-- This automates saving the output of my `sudo cat /proc/meminfo` to my host machine and makes it a minutely activity 
+- I then created my bash script titled `memory_email_assignment.sh` by running `nano memory_email_assignment.sh` and saving the script 
+- I then ran the command `echo $(free)` in my bash script, to first visualise my memory information 
+- Afterwards, I ran `echo $(free > /vagrant/ramusage)` in my bash script
+- This is to save the memory information to the vagrant folder in my host machine, in a file called  "memory_info"
+- I also included `cd /home/vagrant` as a line in my bash script to show the pathway and location for my cron job (according to the AltschoolLMS Tutor's lessons) 
+- I then created a cron job by running `* * * * * bash /home/vagrant/memory_email_assignment.sh`
+- This automates my bash script (which saves the output of `echo $(free > /vagrant/ramusage` to my host machine) and makes it run every minute 
