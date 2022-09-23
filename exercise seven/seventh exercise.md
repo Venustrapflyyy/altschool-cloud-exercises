@@ -44,7 +44,7 @@ echo "" >> ${D}; echo "" >> ${D}
 clear
 cat ${D}
 ```
-to forward each line to ${D} as an appendaged line and at the same time, design the content of ${D}, and to clear my terminal before displaying the output of ${D}.
+to forward each line to ${D}, as an appendaged line and at the same time, design the content of ${D}, and to clear my terminal before displaying the output of ${D}.
 
 I declared another variable `currentTime=$(date +%H:%M)`
 Then I created another if block 
@@ -58,7 +58,7 @@ else
     :
 fi
 ```
-to command my script to send $sys_admin an email containing ${D} if the time is 00:00(midnight), sleep for 10 seconds, then delete ${D}, else do nothing. 
+to command my script to send ${sys_admin} an email containing ${D} if the time is 00:00(midnight), sleep for 10 seconds, then delete ${D}, else do nothing. 
 I then created a cron job 
 ![crontab content for assignment 7](https://github.com/Venustrapflyyy/altschool-cloud-exercises/blob/main/exercise%20seven/crontab%20-e%20for%20meory%20usage%20assignment%20(assignment%207).png?raw=true)
 to automatically run my bash script every hour. 
