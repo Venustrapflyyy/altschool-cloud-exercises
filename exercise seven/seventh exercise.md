@@ -44,7 +44,7 @@ echo "" >> ${D}; echo "" >> ${D}
 clear
 cat ${D}
 ```
-to forward each line to $D as an appendaged line and at the same time, design the content of ${D}, and to clear my terminal before displaying the output of ${D}.
+to forward each line to ${D} as an appendaged line and at the same time, design the content of ${D}, and to clear my terminal before displaying the output of ${D}.
 
 I declared another variable `currentTime=$(date +%H:%M)`
 Then I created another if block 
