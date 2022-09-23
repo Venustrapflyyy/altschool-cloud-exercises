@@ -14,16 +14,19 @@
 variables, with S standing for source and D standing for destination and DIR as a directory. 
 
 I then created an if block 
-```if [ "$PWD" == "$DIR" ];
+```
+if [ "$PWD" == "$DIR" ];
 then
     echo "Directory Already Exists!"
 else
     mkdir -p $DIR
-fi```
+fi
+```
 to create a "memory_usage.log" file in the "logs" folder if that is not where I am currently located. 
 I then wrote `cd /home/vagrant/logs` then touch `memory_info.log` to create $D in $DIR.
 I wrote 
-```echo "CURRENT DATE/TIME" >> ${D}
+```
+echo "CURRENT DATE/TIME" >> ${D}
 echo "------------------------------------" >> ${D}
 date >> ${D}
 echo "" >> ${D}
@@ -39,12 +42,14 @@ echo "" >> ${D}; echo "" >> ${D}
 echo "                              :bird: NEW LOG ENTRY :bird:             " >> ${D}
 echo "" >> ${D}; echo "" >> ${D}
 clear
-cat ${D}```
+cat ${D}
+```
 to forward each line to $D as an appendaged line and at the same time, design the content of ${D}, and to clear my terminal before displaying the output of ${D}.
 
 I declared another variable `currentTime=$(date +%H:%M)`
 Then I created another if block 
-```if [ ${currentTime} = 00:13 ];
+```
+if [ ${currentTime} = 00:13 ];
     then mail ${admin_mail} < ${D} &&
     # Sleep for 10 seconds and delete the previous log file
     sleep 10 &&
@@ -52,9 +57,10 @@ Then I created another if block
 else
     :
 fi
+```
 to command my script to send $sys_admin an email containing ${D} if the time is 00:00(midnight), sleep for 10 seconds, then delete ${D}, else do nothing. 
 I then created a cron job 
 ![crontab content for assignment 7](https://github.com/Venustrapflyyy/altschool-cloud-exercises/blob/main/exercise%20seven/crontab%20-e%20for%20meory%20usage%20assignment%20(assignment%207).png?raw=true)
-to automate my bash script every hour. 
+to automatically run my bash script every hour. 
 
 Lastly, I changed the timezone on my virtual machine to that of my host machine by running the `$ sudo timedatectl set-timezone Europe/London` command
