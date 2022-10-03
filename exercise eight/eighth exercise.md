@@ -5,3 +5,7 @@
 
 ## Instruction
 - Submit the Ansible playbook, the output of systemctl status apache2 after deploying the playbook and a screenshot of the rendered page
+
+## Steps 
+- I firstly turned on two different vagrant machines by running `vagrant up` then connected to them using `vagrant ssh`. 
+- 
