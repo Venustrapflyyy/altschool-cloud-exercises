@@ -26,7 +26,7 @@
 the affected octet in this case is the last octet. The result in binary is converted to decimal as made the last part of the gigen IP address in decimal. 
 i.e 11111000 - 00100011 = 00100000 = 32 (in decimal). 
 
-- Network IP = 193. 16. 20. 32/29
+- Network IP = 193. 16. 20. 32
 
 - The broadcast IP can be gotten by adding the wildcard in decimal to the network IP in decimal i.e 193. 16. 20. 32 + 0. 0. 0. 7 = 193. 16. 20. 39 
 
@@ -38,3 +38,13 @@ i.e 11111000 - 00100011 = 00100000 = 32 (in decimal).
 - The host max is the IP address immediately before the broadcast IP i.e 193. 16. 20. 38 
 
 - The number of hosts is the number of available IP addresses between the network IP and the broadcast IP i.e "6" 
+
+## Summary/Answer 
+
+- The network IP is 193. 16. 20. 32 
+
+- The number of hosts is 6 
+
+- The range of IP addresses are from 193. 16. 20. 33 to 193. 16. 20. 38 
+
+- The broadcast IP is 193. 16. 20. 39  
