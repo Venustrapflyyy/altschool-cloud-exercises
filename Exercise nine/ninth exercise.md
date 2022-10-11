@@ -22,7 +22,7 @@
 
 -  The addition of both numbers would give 11111111. 11111111. 11111111. 11111111 and 255. 255. 255. 255, in binary and decimal respectively. 
 
--  The network IP can be gotten by doing; The affected octet in the Net mask minus the corresponding octet in the given IP address (both in binary) 
+-  The network IP can be gotten by doing; The affected octet in the netmask minus the corresponding octet in the given IP address (both in binary) 
 the affected octet in this case is the last octet. The result in binary is converted to decimal as made the last part of the gigen IP address in decimal. 
 i.e 11111000 - 00100011 = 00100000 = 32 (in decimal). 
 
