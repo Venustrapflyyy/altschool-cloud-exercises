@@ -16,7 +16,7 @@ the public IPv4 for the machine is "161.35.38.124".
 
 - I updated the apt repository, before I installed any package by running `apt update` 
 
-- I then installed Apache by running 1apt install apache2 -y` 
+- I then installed Apache by running `apt install apache2 -y` 
 
 - I installed MySQL by running `apt install mysql-server`, entering my desired password. 
 
@@ -133,3 +133,8 @@ SAIL_SKIP_CHECKS=true
 ```
 
 - I cached my configurations by running `php artisan config:cache` and migrated the database by running `php artisan migrate`. 
+
+- On entering my IP address (161.35.38.124) in my browser, I was shown the Laravel home page. 
+![Laravel home page screenshot](https://github.com/Venustrapflyyy/altschool-cloud-exercises/blob/main/Exercise%20ten/laravel%20homepage%20screenshot%20.png)
+
+
